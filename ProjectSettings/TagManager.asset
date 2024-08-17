@@ -3,10 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Platform
-  - <mo
-  - Monster
+  tags: []
   layers:
   - Default
   - TransparentFX
