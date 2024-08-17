@@ -3,11 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Monster_1
-  - Monster_2
-  - MonsterRaum1
-  - Monster
+  tags: []
   layers:
   - Default
   - TransparentFX

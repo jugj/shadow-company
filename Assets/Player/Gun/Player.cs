@@ -5,9 +5,17 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
+<<<<<<< HEAD:Assets/Player/Gun/Player.cs
+public class Player : MonoBehaviour
+=======
 public class PlayerMovment : MonoBehaviour
+>>>>>>> 7085259a3dc79982c3d5b218fa09f43144ad9aee:Assets/Player/Gun/Player Movment.cs
 {
     public float Geschwindigkeit = 3;
+    public float health = 100;
+    [SerializeField] private ParticleSystem BloodParticles;
+
+    private ParticleSystem BloodParticlesInstance;
     // Start is called before the first frame update
     void Start()
     {
@@ -41,13 +49,21 @@ public class PlayerMovment : MonoBehaviour
 >>>>>>> Stashed changes
       
     }
-
+   public void TakeDamage(float damage)
+    {
+        health -= damage;
+        SpawnBloodParticles();
+        if (health <= 0)
+        {
+           
+            Destroy(gameObject);
+        }
+    }
+    private void SpawnBloodParticles()
+    {
+        BloodParticlesInstance = Instantiate(BloodParticles, transform.position, Quaternion.identity);
+    }
   
-  void OnTriggerEnter2D(Collider2D other)
-  {
-  
-  }
 
-    
 
 }
