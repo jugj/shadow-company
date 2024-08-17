@@ -5,9 +5,13 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class raumschiff : MonoBehaviour
+public class Player : MonoBehaviour
 {
     public float Geschwindigkeit = 3;
+    public float health = 100;
+    [SerializeField] private ParticleSystem BloodParticles;
+
+    private ParticleSystem BloodParticlesInstance;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,13 +30,21 @@ public class raumschiff : MonoBehaviour
       transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward); 
       
     }
-
+   public void TakeDamage(float damage)
+    {
+        health -= damage;
+        SpawnBloodParticles();
+        if (health <= 0)
+        {
+           
+            Destroy(gameObject);
+        }
+    }
+    private void SpawnBloodParticles()
+    {
+        BloodParticlesInstance = Instantiate(BloodParticles, transform.position, Quaternion.identity);
+    }
   
-  void OnTriggerEnter2D(Collider2D other)
-  {
-  
-  }
 
-    
 
 }
