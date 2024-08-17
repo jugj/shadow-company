@@ -1,13 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
-public class shooting : MonoBehaviour
+public class Sword : MonoBehaviour
 {
-    public Transform shootingPoint;
-    public GameObject bullet;
     private int weaponcooldown = 0;
+    public Transform swordPoint;
+    public GameObject SwordHitRange;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,10 +16,10 @@ public class shooting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1") && weaponcooldown <= 0)
+        if (Input.GetButtonDown("Fire2") && weaponcooldown <= 0)
         {
-        Instantiate(bullet, shootingPoint.position, transform.rotation );
-        weaponcooldown = 25;
+            Instantiate(SwordHitRange, swordPoint.position, transform.rotation );
+            weaponcooldown = 40;
         }
     }
     private void FixedUpdate()
