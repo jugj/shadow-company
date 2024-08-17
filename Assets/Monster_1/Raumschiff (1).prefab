@@ -1,0 +1,293 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+<<<<<<< HEAD:Assets/Player/Gun/Player.prefab
+--- !u!1 &6058173637699621034
+=======
+--- !u!1 &7978617047371398368
+>>>>>>> 7e73645d391933a8b5c916f2c62d8223e40eadf2:Assets/Monster_1/Raumschiff (1).prefab
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+<<<<<<< HEAD:Assets/Player/Gun/Player.prefab
+  - component: {fileID: 820151049291275714}
+  m_Layer: 0
+  m_Name: shootingPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &820151049291275714
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6058173637699621034}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0.2598894, w: 0.96563846}
+  m_LocalPosition: {x: 0.53999996, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5954565846959644039}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 30.127}
+--- !u!1 &6153122932300987700
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5954565846959644039}
+  - component: {fileID: 2658547293543625368}
+  - component: {fileID: 5667885301972528144}
+  - component: {fileID: 1127618086874452850}
+  - component: {fileID: 8803481174184990277}
+  - component: {fileID: 1292139845033846171}
+=======
+  - component: {fileID: 6842975739745063920}
+  - component: {fileID: 6719823033164906460}
+  - component: {fileID: 3371064170101607702}
+  - component: {fileID: 4821607792514749209}
+  - component: {fileID: -5384703108538668424}
+>>>>>>> 7e73645d391933a8b5c916f2c62d8223e40eadf2:Assets/Monster_1/Raumschiff (1).prefab
+  m_Layer: 0
+  m_Name: Raumschiff (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+<<<<<<< HEAD:Assets/Player/Gun/Player.prefab
+--- !u!4 &5954565846959644039
+=======
+--- !u!4 &6842975739745063920
+>>>>>>> 7e73645d391933a8b5c916f2c62d8223e40eadf2:Assets/Monster_1/Raumschiff (1).prefab
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Player/Gun/Player.prefab
+  m_GameObject: {fileID: 6153122932300987700}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.00000065460335, z: -0, w: 1}
+  m_LocalPosition: {x: -9.00616, y: -0.012384176, z: 0}
+  m_LocalScale: {x: 0.95757, y: 0.95757, z: 0.95757}
+=======
+  m_GameObject: {fileID: 7978617047371398368}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -9.77, y: -0.04, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+>>>>>>> 7e73645d391933a8b5c916f2c62d8223e40eadf2:Assets/Monster_1/Raumschiff (1).prefab
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 820151049291275714}
+  m_Father: {fileID: 0}
+<<<<<<< HEAD:Assets/Player/Gun/Player.prefab
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &2658547293543625368
+=======
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!212 &6719823033164906460
+>>>>>>> 7e73645d391933a8b5c916f2c62d8223e40eadf2:Assets/Monster_1/Raumschiff (1).prefab
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Player/Gun/Player.prefab
+  m_GameObject: {fileID: 6153122932300987700}
+=======
+  m_GameObject: {fileID: 7978617047371398368}
+>>>>>>> 7e73645d391933a8b5c916f2c62d8223e40eadf2:Assets/Monster_1/Raumschiff (1).prefab
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
+  m_Color: {r: 0.49411765, g: 0, b: 0, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 2}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+<<<<<<< HEAD:Assets/Player/Gun/Player.prefab
+--- !u!50 &5667885301972528144
+Rigidbody2D:
+  serializedVersion: 4
+=======
+--- !u!70 &3371064170101607702
+CapsuleCollider2D:
+>>>>>>> 7e73645d391933a8b5c916f2c62d8223e40eadf2:Assets/Monster_1/Raumschiff (1).prefab
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Player/Gun/Player.prefab
+  m_GameObject: {fileID: 6153122932300987700}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!58 &1127618086874452850
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6153122932300987700}
+=======
+  m_GameObject: {fileID: 7978617047371398368}
+>>>>>>> 7e73645d391933a8b5c916f2c62d8223e40eadf2:Assets/Monster_1/Raumschiff (1).prefab
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+<<<<<<< HEAD:Assets/Player/Gun/Player.prefab
+  serializedVersion: 2
+  m_Radius: 0.5
+--- !u!114 &8803481174184990277
+=======
+  m_Size: {x: 1.0000002, y: 2.0000005}
+  m_Direction: 0
+--- !u!50 &4821607792514749209
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7978617047371398368}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!114 &-5384703108538668424
+>>>>>>> 7e73645d391933a8b5c916f2c62d8223e40eadf2:Assets/Monster_1/Raumschiff (1).prefab
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Player/Gun/Player.prefab
+  m_GameObject: {fileID: 6153122932300987700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c95a82b9802aa45a7326e99870ac09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Geschwindigkeit: 3
+--- !u!114 &1292139845033846171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6153122932300987700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1684a1d763df00e46a2d0becc0e3d18b, type: 3}
+=======
+  m_GameObject: {fileID: 7978617047371398368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91c87e6c5ca47814e94f6a5bae693607, type: 3}
+>>>>>>> 7e73645d391933a8b5c916f2c62d8223e40eadf2:Assets/Monster_1/Raumschiff (1).prefab
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootingPoint: {fileID: 820151049291275714}
+  bullet: {fileID: 6716276256232391234, guid: 359b21a211095934badf0028a9e02b2f, type: 3}
