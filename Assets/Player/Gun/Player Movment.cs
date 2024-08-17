@@ -17,6 +17,7 @@ public class PlayerMovment : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+<<<<<<< Updated upstream
       var dir = Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position);
 
       transform.rotation = Quaternion.AngleAxis(Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg, Vector3.forward); 
@@ -29,6 +30,15 @@ public class PlayerMovment : MonoBehaviour
       //{
       //  transform.Translate(Vector2.right*Geschwindigkeit*Time.deltaTime);
       //}
+=======
+      if (Input.GetKey("w"))
+      {
+        transform.Translate(Vector2.right*Geschwindigkeit*Time.deltaTime);
+      }
+      var dir = Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position); 
+      var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+      transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward); 
+>>>>>>> Stashed changes
       
     }
 
