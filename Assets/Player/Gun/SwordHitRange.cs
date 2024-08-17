@@ -5,23 +5,35 @@ using UnityEngine;
 public class SwordHitRange : MonoBehaviour
 {
     public float damage = 20;
+    private int timer = 0;
     // Start is called before the first frame update
     void Start()
     {
         
+        timer = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (timer >= 33)
+            {
+            Destroy(gameObject);
+            }
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
        
             Damaging gegner = collision.GetComponent<Damaging>();
+            if (timer >= 33)
+            {
             Destroy(gameObject);
-            gegner.TakeDamage(damage);
+            if(gegner != null)gegner.TakeDamage(damage);
+            }
+    }
+    private void FixedUpdate()
+    {
+        timer++;
     }
 }
 
