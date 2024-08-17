@@ -5,7 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class raumschiff : MonoBehaviour
+public class PlayerMovment : MonoBehaviour
 {
     public float Geschwindigkeit = 3;
     // Start is called before the first frame update
@@ -17,13 +17,20 @@ public class raumschiff : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      if (Input.GetKey("w"))
-      {
-        transform.Translate(Vector2.right*Geschwindigkeit*Time.deltaTime);
+      var dir = Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position);
+
+      transform.rotation = Quaternion.AngleAxis(Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg, Vector3.forward); 
+      if (Input.GetKey("w")) {
+        float speed = Geschwindigkeit * Time.deltaTime;
+        Debug.Log("magnitude: " + (dir.magnitude) + " speed: " + speed);
+        if (dir.magnitude > speed + 10) transform.Translate(Vector2.right * speed);
       }
-      var dir = Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position); 
-      var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-      transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward); 
+
+      //var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+      //if (Input.GetKey("w"))
+      //{
+      //  transform.Translate(Vector2.right*Geschwindigkeit*Time.deltaTime);
+      //}
       
     }
 

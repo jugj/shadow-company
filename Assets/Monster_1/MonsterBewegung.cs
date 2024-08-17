@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Metorid : MonoBehaviour
+public class MonsterBewegung : MonoBehaviour
 {
    
     public GameObject player;

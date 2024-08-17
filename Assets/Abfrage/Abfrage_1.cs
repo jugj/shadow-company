@@ -6,9 +6,14 @@ using UnityEngine.PlayerLoop;
 
 public class Abfrage : MonoBehaviour
 {
+    private enum Raum {
+        Raum1, Raum2, Raum3, Raum4, Raum5
+    }
+
     public GameObject Player;
-    string Raum = "Raum_1";
+    private Raum raum = Raum.Raum1;
     int Level = 1;
+    public GameObject enemyPrefab;
     
 
     // Start is called before the first frame update
@@ -17,43 +22,53 @@ public class Abfrage : MonoBehaviour
         
     }
 
+    void SpawnEnemy(float x, float y) {
+        Instantiate(enemyPrefab, new Vector3(x, y, 0), Quaternion.identity);
+    }
+
     // Update is called once per frame
     void Update()
     {
         GameObject[] Monster = GameObject.FindGameObjectsWithTag("Monster");
 
-        if(Monster.Length ==0){
+        if (Monster.Length == 0) {
+            Player.transform.position = new Vector3(0, 0, 0);
 
-            Player.transform.position = new Vector2()
+            switch (raum) {
+                case Raum.Raum1:
+                    SpawnEnemy(-1, 0);
+                    break;
+            }
+        }
 
-        
-{}      
-        switch(Raum){
+        //if(Monster.Length ==0){
 
-        case "Raum_1":
+        //    Player.transform.position = new Vector2()
+            
 
-        switch(Level)
+           
+        //switch(Raum){
 
-        case 1:
+        //case "Raum_1":
 
-        Instantiate(GameObject.Find("Slime"),new Vector2(-16, 5));
+        //switch(Level)
+
+        //case 1:
+
+        //Instantiate(GameObject.Find("Slime"),new Vector2(-16, 5));
 
 
-        break;
+        //break;
 
-        case constant-expression2 :
+        //case constant-expression2 :
 
-        statement(s);
+        //statement(s);
 
-        break;
+        //break;
 
-        default :
+        //default :
 
-        statement(s);
-
-}
-
+        //statement(s);
 
         }
-    }
 }
