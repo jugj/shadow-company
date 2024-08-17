@@ -18,7 +18,7 @@ public class shooting : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            Instantiate(bullet, shootingPoint.position, transform.rotation);
+        Instantiate(bullet, shootingPoint.position, transform.rotation );
         }
     }
 }
