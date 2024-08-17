@@ -24,8 +24,6 @@ public class PlayerMovment : MonoBehaviour
         float speed = Geschwindigkeit * Time.deltaTime;
         Debug.Log("magnitude: " + (dir.magnitude) + " speed: " + speed);
         if (dir.magnitude > speed + 10) transform.Translate(Vector2.right * speed);
-      }
-
       //var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
       //if (Input.GetKey("w"))
       //{
