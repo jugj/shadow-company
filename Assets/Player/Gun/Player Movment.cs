@@ -19,17 +19,12 @@ public class raumschiff : MonoBehaviour
     {
       if (Input.GetKey("w"))
       {
-        transform.Translate(Vector2.right*Geschwindigkeit*Time.deltaTime);
+        transform.Translate(Vector2.down*Geschwindigkeit*Time.deltaTime);
       }
       var dir = Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position); 
       var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
       transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward); 
       
     }
-  
-  void OnTriggerEnter2D(Collider2D other)
-  {
-    Destroy(gameObject);
-    Destroy(other.gameObject);
-  }
+    
 }
