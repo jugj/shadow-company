@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Schwert/frame0012.png.meta
+guid: dbb466fe24f774044a1e129463015061
+=======
 guid: be907349c157437479e7aa5f6531aa07
+>>>>>>> dfd9cb642efec691a11043b155b177848010aea1:Assets/Animations/Schwert/frame0012.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +38,11 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<< HEAD:Assets/Schwert/frame0012.png.meta
+    filterMode: 1
+=======
     filterMode: 0
+>>>>>>> dfd9cb642efec691a11043b155b177848010aea1:Assets/Animations/Schwert/frame0012.png.meta
     aniso: 1
     mipBias: 0
     wrapU: 1

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Schwert/frame0000.png.meta
+guid: e04cd26db2d06724fb225c7e628d05a0
+=======
 guid: 28b3a281171ae484c85864baa2f9df39
+>>>>>>> dfd9cb642efec691a11043b155b177848010aea1:Assets/Animations/Schwert/frame0000.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

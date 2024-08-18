@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+<<<<<<<< HEAD:Assets/pixil-frame-0 (1).png.meta
+guid: 2a3a813d5fc959143968fd1fd9f4741f
+========
+guid: 5e6e5edd176d9ba4e864d6de6aa36f8d
+>>>>>>>> 144979765b8e79632c4f2b7af2eccbd6ce45c24b:Assets/Monster_1/pixil-frame-0 (1) 2.png.meta
+=======
 guid: eb5cf4f66d76df043bc55440c1b1132c
+>>>>>>> dfd9cb642efec691a11043b155b177848010aea1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
