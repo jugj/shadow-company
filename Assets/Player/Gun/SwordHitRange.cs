@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SwordHitRange : MonoBehaviour
 {
-    public float damage = 20;
+    public int damage = 20;
     private int timer = 0;
     // Start is called before the first frame update
     void Start()
