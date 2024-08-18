@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     public int health;
     [SerializeField] private HealthBar healthBar;
     [SerializeField] private ParticleSystem BloodParticles;
+    public Animator PlayerAnimator;
 
     private ParticleSystem BloodParticlesInstance;
     // Start is called before the first frame update
@@ -28,7 +29,12 @@ public class Player : MonoBehaviour
       transform.rotation = Quaternion.AngleAxis(Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg, Vector3.forward); 
       if (Input.GetKey("w")) {
         float speed = Geschwindigkeit * Time.deltaTime;
+        PlayerAnimator.SetBool("Moving", true);
         if (dir.magnitude > speed + 10) transform.Translate(Vector2.right * speed);
+      }
+      else
+      {
+        PlayerAnimator.SetBool("Moving", false);
       }
   
     }
