@@ -19,7 +19,7 @@ public class Sword : MonoBehaviour
         if (Input.GetButtonDown("Fire2") && weaponcooldown <= 0)
         {
             Instantiate(SwordHitRange, swordPoint.position, swordPoint.rotation);
-            weaponcooldown = 40;
+            weaponcooldown = 60;
         }
     }
     private void FixedUpdate()

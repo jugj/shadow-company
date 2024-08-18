@@ -24,8 +24,8 @@ public class shooting : MonoBehaviour
         }
         if (Input.GetButtonDown("Fire1") && weaponcooldown <= 0)
         {
+            GunAnimator.SetBool("GunAnimation", true);
         Instantiate(bullet, shootingPoint.position, transform.rotation );
-        GunAnimator.SetBool("GunAnimation", true);
         weaponcooldown = 25;
         }
     }

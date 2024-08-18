@@ -16,14 +16,13 @@ public class SwordHitRange : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (timer >= 33)
+        if (timer >= 35)
             {
             Destroy(gameObject);
             }
     }
-    void OnTriggerEnter2D(Collider2D collision)
+     void OnTriggerExit2D(Collider2D collision)  
     {
-       
             Damaging gegner = collision.GetComponent<Damaging>();
             if (timer >= 33)
             {
