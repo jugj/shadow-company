@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Damaging : MonoBehaviour
 {
-    public float health = 20;
-    public float damage = 10;
+    public int health = 20;
+    public int damage = 10;
     private int weaponcooldown;
     [SerializeField] private ParticleSystem BloodParticles;
 
@@ -21,7 +21,7 @@ public class Damaging : MonoBehaviour
     {
         
     }
-    public void TakeDamage(float damage)
+    public void TakeDamage(int damage)
     {
         health -= damage;
         SpawnBloodParticles();

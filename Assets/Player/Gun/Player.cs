@@ -8,14 +8,16 @@ using UnityEngine.UIElements;
 public class Player : MonoBehaviour
 {
     public float Geschwindigkeit = 3;
-    public float health = 100;
+    public int maxHealth = 100;
+    public int health;
+    [SerializeField] private HealthBar healthBar;
     [SerializeField] private ParticleSystem BloodParticles;
 
     private ParticleSystem BloodParticlesInstance;
     // Start is called before the first frame update
     void Start()
     {
-        
+        health = maxHealth;
     }
 
     // Update is called once per frame
@@ -28,15 +30,16 @@ public class Player : MonoBehaviour
         float speed = Geschwindigkeit * Time.deltaTime;
         if (dir.magnitude > speed + 10) transform.Translate(Vector2.right * speed);
       }
+  
     }
    
-    public void TakeDamage(float damage)
+    public void TakeDamage(int damage)
     {
         health -= damage;
         SpawnBloodParticles();
+        healthBar.SetHealth(health);
         if (health <= 0)
         {
-           
             Destroy(gameObject);
         }
     }
